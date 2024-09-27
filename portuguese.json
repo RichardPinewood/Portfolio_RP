@@ -1,0 +1,21 @@
+{
+  "habilities": "Habilidades",
+  "projects": "Projetos",
+  "greeting": "Olá",
+  "intro1": "Chamo-me Ricardo Pinheiro, como programador a minha missão",
+  "intro2": "se destaca em ultrapassar os limites da minha criatividade e",
+  "intro3": "desenvolver ideias que irão beneficiar a humanidade",
+  "downloadCV": "Transferir CV",
+  "cvLink": "images/CV_RicardoPinheiro.png",
+  "footer": "© Todos os Direitos Reservados 2024",
+  "title": "Tecnologias que eu aprendi duarante a minha jornada",
+  "frontend": "👉 Desenvolvimento Web - Tecnologias Frontend 👈",
+  "backend": "👉 Desenvolvimento Web - Tecnologias Backend 👈",
+  "tools": "👉 Desenvolvimento Web - Ferramentas 👈",
+  "android": "👉 Desenvolvimento Android/IOS 👈",
+  "close": "Sair",
+  "inDevelopment": "🔨 Ainda em Desenvolvimento ",
+  "comingsoon":"Em breve....",
+  "facts":"Aqui será onde vou armazenar os meus futuros projetos"
+}
+
