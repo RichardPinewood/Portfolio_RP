@@ -2,25 +2,19 @@
   "habilities": "Skills",
   "projects": "Projects",
   "greeting": "Hello",
-  "intro1": "My name is Richard Pinewood, has a programmer my mission",
-  "intro2": "stands out by pushing the limits of my creativity to",
+  "intro1": "My name is Richard Pinewood, and as a programmer, my mission",
+  "intro2": "is to push the limits of my creativity to",
   "intro3": "develop innovative projects that could benefit humankind",
-   "cvLink": "images/CV_RichardPinewoodEN.png",
+  "cvLink": "images/CV_RichardPinewoodEN.png",
   "downloadCV": "Download CV",
   "footer": "© All Rights Reserved 2024",
-  "title": "Technologies i have learned during my journey",
-  "frontend": "👉 Web Development - Frontend Technologies 👈",
-  "backend": "👉 Web Development - Backend Technologies 👈",
-  "tools": "👉 Web Development - Tools 👈",
-  "android": "👉 Android/IOS Development 👈",
+  "title": "Technologies I have learned during my journey",
+  "frontend": "Web Development - Frontend Technologies",
+  "backend": "Web Development - Backend Technologies",
+  "tools": "Web Development - Tools",
+  "android": "Android/iOS Development",
   "close": "Close",
   "inDevelopment": "🔨 ",
-  "comingsoon":"Coming Soon....",
-  "facts":"This is were my future projects will be stored"
-
+  "comingsoon": "Coming Soon...",
+  "facts": "This is where my future projects will be stored"
 }
-
-
-
-
-
