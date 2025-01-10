@@ -10,6 +10,7 @@ body {
 }
 
 
+
 .navbar-brand {
     color: white;
     text-decoration: none;
@@ -68,6 +69,11 @@ body {
     text-align: center;
     margin: 20px auto; 
 }
+
+.container.mt-custom {
+    font-family: "Times New Roman", Times, serif;
+}
+
 
 .img-button {
     background-color: #000;
