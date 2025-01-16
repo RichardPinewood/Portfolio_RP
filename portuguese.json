@@ -14,8 +14,8 @@
   "tools": " 👉 Desenvolvimento Web - Ferramentas ",
   "android": "👉  Desenvolvimento Android ",
   "close": "Sair",
-  "inDevelopment": "🔨 Ainda em Desenvolvimento ",
-  "comingsoon":"Em breve....",
-  "facts":"Aqui será onde vou armazenar os meus futuros projetos"
+  "facts":"Projetos",
+  "projectDescription": "A preservação do cinema em um unico lugar",
+  "comingsoonButton": "Em Breve"
 }
 

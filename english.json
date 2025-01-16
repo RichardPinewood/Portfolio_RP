@@ -14,7 +14,7 @@
   "tools": "👉 Web Development - Tools",
   "android": "👉 Android Development",
   "close": "Close",
-  "inDevelopment": "🔨 ",
-  "comingsoon": "Coming Soon...",
-  "facts": "This is where my future projects will be stored"
+  "facts": "Projects",
+  "projectDescription": "The preservation of cinema in just one place",
+  "comingsoonButton":  "Coming Soon"
 }
