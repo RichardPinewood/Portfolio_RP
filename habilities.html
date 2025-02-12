@@ -9,6 +9,52 @@
     <link rel="icon" type="image/jpg" href="/images/IconTab.png">
 </head>
 <body>
+
+    <style>
+        .image-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            flex: 0 0 auto;
+        }
+
+        .image-item img {
+            width: 100%;
+            max-width: 90px;
+            height: auto;
+            border-radius: 8px;
+            background-color: transparent;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-item img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+        .card-header {
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 8px 8px 0 0;
+            text-align: center;
+        }   
+
+      .card-custom {
+            background-color: transparent;
+            border: 2px solid #444;
+            color: white;
+            border-radius: 8px;
+            padding: 10px;
+            width: 100%;
+            max-width: 1000px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            margin: 20px auto; 
+        }  
+    </style>
+
+
     <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">RP</a>
