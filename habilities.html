@@ -4,84 +4,80 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-key="title">Richard Pinewood | Technologies</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="style/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="icon" type="image/jpg" href="/images/IconTab.png" />
+  <link rel="stylesheet" href="style/style.css">
+  <style>
+    body {
+      background-color: #000;
+      color: #dcddde;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      padding: 1rem;
+    }
+    .tech-header {
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-bottom: 1rem;
+    }
+    .tech-header h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      margin: 0;
+    }
+    .embed-container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    .discord-embed {
+      border-left: 5px solid #00ffff;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-sizing: border-box;
+    }
+    .topic {
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #23272a;
+      padding-bottom: 1rem;
+    }
+    .topic:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .discord-embed h3 {
+      font-size: 1.5rem;
+      margin: 0 0 0.75rem;
+      color: #fff;
+    }
+    .tech-images {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 0.5rem;
+      overflow-x: auto;
+      padding-bottom: 0.5rem;
+    }
+    .tech-images img {
+      width: 60px;
+      height: auto;
+      border-radius: 4px;
+      transition: transform 0.2s ease, filter 0.2s ease;
+      flex-shrink: 0;
+    }
+    .tech-images img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
 <body>
-    <style>
-        body {
-          margin: 0;
-          min-height: 100vh;
-        }
-     
-        .tech-header {
-          text-align: center;
-          padding: 3rem 1rem 1.5rem;
-          margin-bottom: 2rem;
-        }
-        
-        .tech-header h1 {
-          font-size: 2.8rem;
-          margin-bottom: 0.5rem;
-          color: white;
-        }
-        .tech-header p {
-          font-size: 1.2rem;
-          color: #ccc;
-        }
-        
-        .tech-card {
-          border: 2px solid #00ffff;
-          border-radius: 12px;
-          padding: 1.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-        }
-        
-        .tech-images {
-          display: flex;
-          gap: 1rem;
-          flex-wrap: wrap;
-          align-items: center;
-          justify-content: center;
-          margin-top: 1rem;
-        }
-        
-        .tech-images img {
-          width: 100px; 
-          height: auto;
-          padding: 0.3rem;
-          border-radius: 4px;
-          transition: transform 0.2s ease, filter 0.2s ease;
-        }
-        
-        .tech-images img:hover {
-          transform: scale(1.1);
-        }
-        
-        .tech-card h3[data-key="backend"] + .tech-images img {
-          width: 120px;
-        }
-      </style>
-    </head>
-
-
   <nav class="navbar navbar-expand-lg custom-navbar">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">RP</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <a class="navbar-brand" href="index.html">RP</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -93,59 +89,45 @@
       </div>
     </div>
   </nav>
-
   <header class="tech-header">
     <h1 data-key="stack-title">My Knowledge Setup</h1>
   </header>
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-      <div class="col">
-        <div class="tech-card h-100">
-          <h3 data-key="frontend">Web Development - Frontend</h3>
-          <div class="tech-images">
-            <img src="images/HtmlLogoIcon01.png" alt="HTML Logo" />
-            <img src="images/CssLogoIcon02.png" alt="CSS Logo" />
-            <img src="images/JavascriptIcon04.png" alt="JavaScript Logo" />
-            <img src="images/BootstrapLogo04.png" alt="Bootstrap Logo" />
-            <img src="images/ReactLogotipoIcon07.png" alt="React Logo" />
-          </div>
+  <div class="embed-container">
+    <div class="discord-embed">
+      <div class="topic">
+        <h3 data-key="frontend">Web Development - Frontend</h3>
+        <div class="tech-images">
+          <img src="images/HtmlLogoIcon01.png" alt="HTML Logo" />
+          <img src="images/CssLogoIcon02.png" alt="CSS Logo" />
+          <img src="images/JavascriptIcon04.png" alt="JavaScript Logo" />
+          <img src="images/BootstrapLogo04.png" alt="Bootstrap Logo" />
+          <img src="images/ReactLogotipoIcon07.png" alt="React Logo" />
         </div>
       </div>
-     
-      <div class="col">
-        <div class="tech-card h-100">
-          <h3 data-key="tools">Web Development - Tools</h3>
-          <div class="tech-images">
-            <img src="images/PostmanLogoIcon11.png" alt="Postman Logo" />
-            <img src="images/MongodbLogoIcon11.png" alt="MongoDB Logo" />
-            <img src="images/icons8-git-240.png" alt="Git Logo" />
-          </div>
+      <div class="topic">
+        <h3 data-key="tools">Web Development - Tools</h3>
+        <div class="tech-images">
+          <img src="images/PostmanLogoIcon11.png" alt="Postman Logo" />
+          <img src="images/MongodbLogoIcon11.png" alt="MongoDB Logo" />
+          <img src="images/icons8-git-240.png" alt="Git Logo" />
         </div>
       </div>
-
-      <div class="col">
-        <div class="tech-card h-100">
-          <h3 data-key="backend">Web Development - Backend</h3>
-          <div class="tech-images">
-            <img src="images/NodejsLogtipo08.png" alt="Node.js Logo" />
-            <img src="images/ExpressIconLogo10.png" alt="Express Logo" />
-          </div>
+      <div class="topic">
+        <h3 data-key="backend">Web Development - Backend</h3>
+        <div class="tech-images">
+          <img src="images/NodejsLogtipo08.png" alt="Node.js Logo" />
+          <img src="images/ExpressIconLogo10.png" alt="Express Logo" />
         </div>
       </div>
-  
-      <div class="col">
-        <div class="tech-card h-100">
-          <h3 data-key="android">Android Development</h3>
-          <div class="tech-images">
-            <img src="images/JavaLogoIcon12.png" alt="Java Logo" />
-            <img src="images/firebase_icon.png" alt="Firebase Logo" />
-          </div>
+      <div class="topic">
+        <h3 data-key="android">Android Development</h3>
+        <div class="tech-images">
+          <img src="images/JavaLogoIcon12.png" alt="Java Logo" />
+          <img src="images/firebase_icon.png" alt="Firebase Logo" />
         </div>
       </div>
     </div>
   </div>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="language_switching.js"></script>
 </body>
