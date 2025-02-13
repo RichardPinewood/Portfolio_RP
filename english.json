@@ -7,12 +7,12 @@
   "downloadCV": "Download CV",
   "footer": "© 2025 All Rights Reserved",
   "stack-title": "My knowledge setup",
-  "frontend": "Web Development - Frontend",
-  "backend": "Web Development - Backend",
-  "tools": "Web Development - Tools",
+  "frontend": "Web Development | Frontend",
+  "backend": "Web Development | Backend",
+  "tools": "Web Development | Tools",
   "android": "Android Development",
   "close": "Close",
   "facts": "Projects",
-  "projectDescription": "The best place to watch movies locally!",
+  "projectDescription": "The best place to watch movies locally",
   "detailsbtn": "See on GitHub"
 }
