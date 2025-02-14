@@ -24,7 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('[data-key]').forEach(element => {
             const key = element.getAttribute('data-key');
             if (translations[key]) {
-                element.textContent = translations[key];
+                if (element.tagName === "INPUT" && element.hasAttribute("placeholder")) {
+                    element.setAttribute("placeholder", translations[key]); // Update placeholder
+                } else {
+                    element.textContent = translations[key]; // Update other elements
+                }
             }
         });
 
@@ -34,10 +38,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
-
-
-
-
-
-
-

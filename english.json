@@ -7,12 +7,16 @@
   "downloadCV": "Download CV",
   "footer": "© 2025 All Rights Reserved",
   "stack-title": "My knowledge setup",
-  "frontend": "Web Development | Frontend",
-  "backend": "Web Development | Backend",
-  "tools": "Web Development | Tools",
-  "android": "Android Development",
   "close": "Close",
   "facts": "Projects",
   "projectDescription": "The best place to watch movies locally",
-  "detailsbtn": "See on GitHub"
+  "detailsbtn": "See on GitHub",
+  "exit": "Exit",
+  "title": "What would you like to know about me?",
+  "subtitle": "Use this guide as an example",
+  "frontendButton": "Frontend Technologies",
+  "backendButton": "Backend Technologies",
+  "toolsButton": "Tools",
+  "androidButton": "Android Development",
+  "placeholder": "Write your question here..."
 }

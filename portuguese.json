@@ -6,12 +6,15 @@
   "downloadCV": "Transferir CV",
   "cvLink": "images/CV_RicardoPinheiroPT.png",
   "footer": "© 2025 Todos os Direitos Reservados",
-  "frontend": "Desenvolvimento Web | Frontend",
-  "backend": "Desenvolvimento Web | Backend ",
-  "tools": "Desenvolvimento Web | Ferramentas ",
-  "android": "Desenvolvimento Android ",
   "close": "Sair",
   "facts": "Projetos",
   "projectDescription": "O melhor lugar para assitir filmes localmente",
-  "detailsbtn": "Ver no github"
+  "detailsbtn": "Ver no github",
+  "title": "O que gostarias de saber sobre mim?",
+  "subtitle": "Usa este guia como um exemplo",
+  "frontendButton": "Tecnologias Frontend",
+  "backendButton": "Tecnologias Backend",
+  "toolsButton": "Ferramentas",
+  "androidButton": "Desenvolvimento Android",
+  "search-bar": "Escreva sua pergunta aqui..."
 }
