@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style/style.css">
@@ -18,19 +17,18 @@
       height: 100%;
       font-family: Arial, sans-serif;
     }
-
     main {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
+      padding-top: 50px;
       min-height: 100vh;
     }
-
     .chatbot-container {
       width: 100%;
       max-width: 800px;
       min-height: 600px;
-      background-color: #333; 
+      background-color: #333;
       border-radius: 10px;
       border: 2px solid #00cccc;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -39,24 +37,20 @@
       flex-direction: column;
       justify-content: space-between;
     }
-
     .chatbot-header {
       text-align: center;
       margin-bottom: 15px;
     }
-
     .chatbot-header h1 {
       font-size: 1.8rem;
       color: white;
       margin-bottom: 5px;
     }
-
     .chatbot-header p {
       font-size: 1rem;
       color: white;
       margin-bottom: 15px;
     }
-
     .preset-questions {
       display: flex;
       justify-content: center;
@@ -64,7 +58,6 @@
       gap: 10px;
       margin-bottom: 20px;
     }
-
     .preset-questions button {
       padding: 10px 15px;
       border: 1px solid #ccc;
@@ -73,11 +66,9 @@
       border-radius: 5px;
       transition: background-color 0.3s;
     }
-
     .preset-questions button:hover {
       background-color: #dceeff;
     }
-
     .chat-messages {
       flex-grow: 1;
       overflow-y: auto;
@@ -87,7 +78,6 @@
       margin-bottom: 10px;
       background-color: #fafafa;
     }
-
     .message {
       margin-bottom: 10px;
       padding: 8px;
@@ -95,7 +85,6 @@
       max-width: 70%;
       word-wrap: break-word;
     }
-
     .message.user {
       background-color: black;
       align-self: flex-end;
@@ -103,7 +92,6 @@
       color: white;
       padding: 10px;
     }
-
     .message.bot {
       background-color: green;
       align-self: flex-start;
@@ -111,13 +99,11 @@
       color: white;
       padding: 10px;
     }
-
     .input-area {
       display: flex;
       justify-content: center;
       align-items: center;
     }
-
     .input-area input {
       width: 60%;
       padding: 10px;
@@ -126,7 +112,6 @@
       border-radius: 5px 0 0 5px;
       outline: none;
     }
-
     .input-area button {
       padding: 10px 20px;
       font-size: 1rem;
@@ -137,12 +122,10 @@
       cursor: pointer;
       transition: background-color 0.3s;
     }
-
     .input-area button:hover {
       background-color: #00a3a3;
     }
   </style>
-
   <nav class="navbar navbar-expand-lg custom-navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="/index.html" data-key="brand">RP</a>
@@ -156,30 +139,25 @@
       </div>
     </div>
   </nav>
-
   <main>
     <div class="chatbot-container">
       <div class="chatbot-header">
         <h1 data-key="title">What would you like to know about me?</h1>
         <p data-key="subtitle">Use this guide as an example</p>
       </div>
-
       <div class="preset-questions">
         <button data-key="frontendButton">Frontend Technologies</button>
         <button data-key="backendButton">Backend Technologies</button>
         <button data-key="toolsButton">Tools</button>
         <button data-key="androidButton">Android Development</button>
       </div>
-
       <div class="chat-messages"></div>
-
       <div class="input-area">
         <input data-key="search-bar" type="text" placeholder="Write your question here..." />
         <button><i class="bi bi-send"></i></button>
       </div>
     </div>
-  </main> 
-
+  </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="knowledge.js"></script>
   <script src="language_switching.js"></script>
