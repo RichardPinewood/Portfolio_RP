@@ -169,3 +169,22 @@ body {
     }
 }
 
+@media (max-width: 576px) {
+    .chatbot-container {
+      max-height: 80vh;
+      padding: 15px;
+    }
+    .chatbot-header h1 {
+      font-size: 1.5rem;
+    }
+    .chatbot-header p {
+      font-size: 0.9rem;
+    }
+    .input-area input {
+      width: 70%;
+      font-size: 0.9rem;
+    }
+    .input-area button {
+      font-size: 0.9rem;
+    }
+  }
