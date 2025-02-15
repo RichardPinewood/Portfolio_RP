@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
       en: {
         "frontend technologies": "The wonders of frontend are such that nothing can keep us apart. I have experience using HTML, CSS, JavaScript, Bootstrap, and React.",
         "backend technologies": "Backend has been challenging to sync with frontend, but I always strive to do my best! I know the basics of PHP and lately have been focusing more on NodeJS.",
-        "tools": "I know how to use Git, giving me the advantage of uploading projects to GitHub and GitLab. I enjoy using MongoDB to monitor my project databases and have been learning to use Postman.",
+        "tools": "I know how to use Git, giving me the advantage of uploading projects to GitHub and GitLab. I enjoy using MongoDB for monitoring and building databases and have been learning to use Postman.",
         "android development": "Throughout my journey, I also learned the basics of developing Android applications using Java and working with APIs in Android Studio."
       },
       pt: {
