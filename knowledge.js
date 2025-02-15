@@ -7,14 +7,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const answers = {
       en: {
         "frontend technologies": "The wonders of frontend are such that nothing can keep us apart. I have experience using HTML, CSS, JavaScript, Bootstrap, and React.",
-        "backend technologies": "Backend has been challenging to sync with frontend, but I always strive to do my best! I learned the basics of PHP and lately have been focusing more on NodeJS.",
-        "tools": "I know how to use Git to upload projects to GitHub or GitLab. I enjoy using MongoDB to monitor my project databases and have been learning to use Postman.",
+        "backend technologies": "Backend has been challenging to sync with frontend, but I always strive to do my best! I know the basics of PHP and lately have been focusing more on NodeJS.",
+        "tools": "I know how to use Git to upload projects for GitHub or GitLab. I enjoy using MongoDB to monitor my project databases and have been learning to use Postman.",
         "android development": "Throughout my journey, I also learned how to develop Android applications. I learned to use Java and work with APIs in Android Studio."
       },
       pt: {
         "tecnologias frontend": "As maravilhas que o frontend trás, não há nada que nos possa separar. Tenho experiência em usar HTML, CSS, Javascript, Bootstrap e React.",
         "tecnologias backend": "O backend tem sido uma tarefa difícil de sincronizar com o frontend, mas quero sempre dar o meu melhor! Aprendi os básicos de PHP e, ultimamente, tenho vindo a focar-me mais em NodeJS.",
-        "ferramentas": "Sei usar o Git para fazer uploads de projetos no Github ou Gitlab. Gosto de usar o MongoDB para monitorar bases de dados dos meus projetos e tenho vindo a aprender a usar o Postman.",
+        "ferramentas": "Eu sei usar o Git para fazer uploads de projetos no Github ou Gitlab. Gosto de usar o MongoDB para monitorar bases de dados dos meus projetos e tenho vindo a aprender a usar o Postman.",
         "desenvolvimento android": "Durante a minha jornada, também aprendi a desenvolver aplicações Android. Aprendi a usar Java e a mexer com APIs no Android Studio."
       }
     };
