@@ -12,11 +12,11 @@
   "projectDescription": "The best place to watch movies locally",
   "detailsbtn": "See on GitHub",
   "exit": "Exit",
-  "title": "What would you like to know about me?",
-  "subtitle": "Use this guide as an example",
+  "title": "Welcome to my core of knowledge",
+  "subtitle": "Click in one of the categories bellow",
   "frontendButton": "Frontend Technologies",
   "backendButton": "Backend Technologies",
   "toolsButton": "Tools",
   "androidButton": "Android Development",
-  "placeholder": "Ask here..."
+  "placeholder": "Type here..."
 }
