@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "tecnologias frontend": "As maravilhas que o frontend trás, não há nada que nos possa separar. Tenho experiência em usar HTML, CSS, Javascript, Bootstrap e React.",
         "tecnologias backend": "O backend tem sido uma tarefa difícil de sincronizar com o frontend, mas quero sempre dar o meu melhor! Aprendi os básicos de PHP e, ultimamente, tenho vindo a focar-me mais em NodeJS.",
         "ferramentas": "Eu sei usar o Git para fazer uploads de projetos no Github ou Gitlab. Adoro usar o MongoDB para monitorar e construir bases de dados nos meus projetos e tenho vindo a aprender a usar o Postman.",
-        "desenvolvimento android": "Durante a minha jornada, também aprendi a desenvolver aplicações Android. Aprendi a usar Java e a mexer com APIs no Android Studio."
+        "desenvolvimento android": "Durante a minha jornada, também aprendi a desenvolver aplicações Android. Principalmente os basicos de Java e integrar APIs no Android Studio."
       }
     };
   
