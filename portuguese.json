@@ -10,11 +10,11 @@
   "facts": "Projetos",
   "projectDescription": "O melhor lugar para assitir filmes localmente",
   "detailsbtn": "Ver no github",
-  "title": "Então diz-me,o que é que gostarias de saber sobre mim?",
+  "title": "O que gostarias de saber sobre mim?",
   "subtitle": "Clica em umas das categorias em baixo",
   "frontendButton": "Tecnologias Frontend",
   "backendButton": "Tecnologias Backend",
   "toolsButton": "Ferramentas",
   "androidButton": "Desenvolvimento Android",
-  "search-bar": "Escreve aqui..."
+  "search-bar": "Ou escreve aqui..."
 }
