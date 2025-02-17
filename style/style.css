@@ -44,7 +44,7 @@ body {
 
 .navbar-nav {
     display: flex;
-    align-items: center;
+    align-items: end;
 }
 
 .navbar-toggler-icon {
