@@ -1,0 +1,20 @@
+{
+  "habilities": "Habilidades",
+  "projects": "Projetos",
+  "greeting": "Olá,",
+  "intro": "Chamo-me Ricardo Pinheiro, eu sou um programador web junior  que gosta de usar a criatividade para desenvolver soluções inovadoras em aplicações full stack.",
+  "downloadCV": "Transferir CV",
+  "cvLink": "images/CV_RicardoPinheiroPT.png",
+  "footer": "© 2025 Todos os Direitos Reservados",
+  "close": "Sair",
+  "facts": "Projetos",
+  "projectDescription": "O melhor lugar para encontrar filmes e séries",
+  "detailsbtn": "Ver no github",
+  "title": "O que gostarias de saber sobre mim?",
+  "subtitle": "Clica em umas das categorias em baixo",
+  "frontendButton": "Tecnologias Frontend",
+  "backendButton": "Tecnologias Backend",
+  "toolsButton": "Ferramentas",
+  "androidButton": "Desenvolvimento Android",
+  "search-bar": "Ou escreve aqui..."
+}

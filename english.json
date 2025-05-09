@@ -1,0 +1,22 @@
+{
+  "habilities": "Skills",
+  "projects": "Projects",
+  "greeting": "Hello,",
+  "intro": " My name is Richard Pinewood. I am a junior web developer who enjoys using creativity to develop innovative solutions for full stack applications",
+  "cvLink": "images/CV_RichardPinewoodEN.png",
+  "downloadCV": "Download CV",
+  "footer": "© 2025 All Rights Reserved",
+  "stack-title": "My knowledge setup",
+  "close": "Close",
+  "facts": "Projects",
+  "projectDescription": "The best place to find Movies & Tv SHows",
+  "detailsbtn": "See on GitHub",
+  "exit": "Exit",
+  "title": "What would you like to know about me?",
+  "subtitle": "Click in one of the categories bellow",
+  "frontendButton": "Frontend Technologies",
+  "backendButton": "Backend Technologies",
+  "toolsButton": "Tools",
+  "androidButton": "Android Development",
+  "placeholder": "Or Type here..."
+}
