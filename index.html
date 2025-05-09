@@ -5,93 +5,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Richard Pinewood</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="icon" type="image/jpg" href="/images/IconTab.png">
   <link rel="stylesheet" href="style/style.css">
+  <link rel="icon" type="image/jpg" href="/images/IconTab.png">
 </head>
 <body>
   <style>
-      body {
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh
+    }
 
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 2rem;
-        text-align: center;
-      }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      text-align: center;
+    }
 
-      .mt-custom {
-        margin-top: 120px;
-      }
+    .mt-custom {
+      margin-top: 120px;
+    }
 
-      .container h3 {
-        font-family: 'Orbitron', sans-serif;
-        font-size: 3rem;
-        margin-bottom: 0.5rem; 
-        color: #00ffff;
-      }
+    .container h3 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 0.5rem; 
+      color: #00ffff;
+    }
 
-      .container p {
-        font-size: 1.3rem;
-        line-height: 1.6;
-        margin-top: 0.5rem;
-        margin-bottom: 2rem;
-        color: #e0e0e0;
-      }
+    .container p {
+      font-size: 1.3rem;
+      line-height: 1.6;
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+      color: #e0e0e0;
+    }
 
-      .btn-light {
-        background-color: #00ffff;
-        color: #000;
-        border: none;
-        padding: 0.75rem 1.5rem;
-        border-radius: 50px;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-        font-weight: 600;
-      }
+    .btn-light {
+      background-color: #00ffff;
+      color: #000;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      font-weight: 600;
+    }
 
-      .btn-light:hover {
-        background-color: #00cccc;
-      }
+    .btn-light:hover {
+      background-color: #00cccc;
+    }
   </style>
 
-<nav class="navbar navbar-expand-lg custom-navbar">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">RP</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
-            aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="habilities.html" data-key="habilities">Habilidades</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="projects.html" data-key="projects">Projetos</a>
-        </li>
-        <li class="nav-item dropdown ms-auto">
-          <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" 
-             data-bs-toggle="dropdown" aria-expanded="false">🌍
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="#" data-lang="pt">Portuguese</a>
-            </li>
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="#" data-lang="en">English</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">RP</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="habilities.html" data-key="habilities">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html" data-key="projects">Projetos</a>
+          </li>
+          <li class="nav-item dropdown ms-auto">
+            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" 
+               data-bs-toggle="dropdown" aria-expanded="false">🌍
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#" data-lang="pt">Portuguese</a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#" data-lang="en">English</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
+  <!-- Main Content -->
   <div class="container mt-custom">
     <div>
       <h3 data-key="greeting">Hello,</h3>
@@ -99,13 +101,14 @@
     <p class="h4" data-key="intro">
       My name is Richard Pinewood. I am a junior web devoloper<br>
       who enjoys using creativity to develop innovative solutions
-      for <br> f
-      ull stack applications.<br>
+      for <br> 
+      full stack applications.<br>
     </p>
 
     <a href="images/CurriculumVitae.png" download="CurriculumVitae" class="btn btn-light" data-key="downloadCV">Download CV</a>
   </div>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container-2">
       <div class="social-links">
@@ -120,6 +123,7 @@
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="language_switching.js"></script>
 </body>
