@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const key = element.getAttribute('data-key');
             if (translations[key]) {
                 if (element.tagName === "INPUT" && element.hasAttribute("placeholder")) {
-                    element.setAttribute("placeholder", translations[key]); // Update placeholder
+                    element.setAttribute("placeholder", translations[key]); 
                 } else {
-                    element.textContent = translations[key]; // Update other elements
+                    element.textContent = translations[key]; 
                 }
             }
         });

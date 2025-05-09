@@ -1,16 +1,16 @@
 body {
-    background-color: #000;
+    background-color: #121828; /* Dark Slate Blue */
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    color: white;
+    color: #C0C5D0; /* Light Steel Blue / Cool Gray */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 .navbar-brand {
-    color: white;
+    color: #E0E0E0; /* Brighter text for brand */
     text-decoration: none;
     font-size: 45px;
     display: flex;
@@ -18,24 +18,24 @@ body {
 }
 
 .navbar-brand:active {
-    color: white;
+    color: #E0E0E0; /* Brighter text for brand */
 }
 
 .navbar-brand:hover {
-    color: white !important;
+    color: #E0E0E0 !important; /* Brighter text for brand */
 }
 
 .nav-link {
-    color: white;
+    color: #C0C5D0; /* Standard text color */
     text-decoration: none;
     font-size: 1.2rem;
 }
 
 .nav-link:hover,
 .nav-link:active {
-    color: white;
+    color: #29B6F6; /* Accent color */
     text-decoration: none;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #29B6F6; /* Accent color */
 }
 
 .navbar-collapse {
@@ -100,7 +100,7 @@ body {
 
 .section-title {
     font-size: 1.5rem;
-    color: #ccc;
+    color: #A0A5B0; /* Slightly darker than main text */
     margin-bottom: 5px;
     text-align: center;
     padding-bottom: 8px;
