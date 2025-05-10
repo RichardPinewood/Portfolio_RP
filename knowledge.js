@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
     const chatMessages = document.querySelector(".chat-messages");
-    const inputField = document.querySelector(".input-area input");
-    const sendButton = document.querySelector(".input-area button");
     const presetButtons = document.querySelectorAll(".preset-questions button");
 
     const answers = {
@@ -57,22 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
         loadingMessage.innerHTML = answer;
       }, 1000);
     }
-  
-    sendButton.addEventListener("click", () => {
-      const userInput = inputField.value.trim();
-      if (userInput !== "") {
-        processInput(userInput);
-        inputField.value = "";
-      }
-    });
-  
-    inputField.addEventListener("keydown", (event) => {
-      if (event.key === "Enter") {
-        event.preventDefault();
-        sendButton.click();
-      }
-    });
-  
+    
     presetButtons.forEach((button) => {
       button.addEventListener("click", () => {
         processInput(button.textContent);

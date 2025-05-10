@@ -7,272 +7,332 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style/style.css">
-  <style>
-    main {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 2rem 1rem;
-      min-height: calc(100vh - 56px); /* Account for navbar height */
-    }
-    
-    .chatbot-container {
-      width: 100%;
-      max-width: 900px;
-      height: auto;
-      min-height: 600px;
-      background-color: #1a2235; /* Slightly lighter than the main background */
-      border-radius: 12px;
-      border: 2px solid #29B6F6; /* Using the accent color */
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), 0 0 15px rgba(41, 182, 246, 0.2); /* Glow effect */
-      padding: 25px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: all 0.3s ease;
-    }
-    
-    .chatbot-header {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    
-    .chatbot-header h1 {
-      font-size: 2rem;
-      color: #29B6F6; /* Accent color */
-      margin-bottom: 10px;
-      text-shadow: 0 0 10px rgba(41, 182, 246, 0.3); /* Glow effect */
-    }
-    
-    .chatbot-header p {
-      font-size: 1.1rem;
-      color: #C0C5D0; /* Light steel blue text */
-      margin-bottom: 15px;
-    }
-    
-    .preset-questions {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 25px;
-    }
-    
-    .preset-questions button {
-      padding: 12px 18px;
-      border: 1px solid #29B6F6; /* Accent color */
-      background: rgba(41, 182, 246, 0.1); /* Semi-transparent accent */
-      color: #C0C5D0; /* Light steel blue text */
-      cursor: pointer;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      font-weight: 500;
-    }
-    
-    .preset-questions button:hover {
-      background-color: rgba(41, 182, 246, 0.2);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    
-    .chat-messages {
-      flex-grow: 1;
-      overflow-y: auto;
-      border: 1px solid #2a3142;
-      border-radius: 8px;
-      padding: 15px;
-      margin-bottom: 15px;
-      background-color: #121828; /* Main background color */
-      display: flex;
-      flex-direction: column;
-      max-height: 350px;
-      scrollbar-width: thin;
-      scrollbar-color: #29B6F6 #1a2235;
-    }
-    
-    .chat-messages::-webkit-scrollbar {
-      width: 6px;
-    }
-    
-    .chat-messages::-webkit-scrollbar-track {
-      background: #1a2235;
-      border-radius: 3px;
-    }
-    
-    .chat-messages::-webkit-scrollbar-thumb {
-      background-color: #29B6F6;
-      border-radius: 3px;
-    }
-    
-    .message {
-      margin-bottom: 15px;
-      padding: 12px 15px;
-      border-radius: 8px;
-      max-width: 80%;
-      word-wrap: break-word;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      animation: fadeIn 0.3s ease;
-    }
-    
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    
-    .message.user {
-      background-color: #2a3142;
-      align-self: flex-end;
-      text-align: right;
-      color: #C0C5D0;
-      border-bottom-right-radius: 2px;
-      margin-left: auto;
-    }
-    
-    .message.bot {
-      background-color: rgba(41, 182, 246, 0.15);
-      align-self: flex-start;
-      text-align: left;
-      color: #C0C5D0;
-      border-bottom-left-radius: 2px;
-      border-left: 3px solid #29B6F6;
-      margin-right: auto;
-    }
-    
-    .input-area {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #1a2235;
-      border-radius: 8px;
-      padding: 5px;
-      border: 1px solid #2a3142;
-    }
-    
-    .input-area input {
-      width: 100%;
-      padding: 12px 15px;
-      font-size: 1rem;
-      border: none;
-      background-color: transparent;
-      color: #C0C5D0;
-      outline: none;
-    }
-    
-    .input-area input::placeholder {
-      color: #6c7a94;
-    }
-    
-    .input-area button {
-      padding: 10px 15px;
-      margin-right: 5px;
-      font-size: 1rem;
-      border: none;
-      background-color: #29B6F6;
-      color: #fff;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .input-area button:hover {
-      background-color: #0d8ecf;
-      transform: translateY(-2px);
-    }
-    
-    .input-area button i {
-      font-size: 1.2rem;
-    }
-    
-    /* Responsive styles */
-    @media (max-width: 992px) {
-      .chatbot-container {
-        max-width: 90%;
+  <body>
+    <style>
+      .custom-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.85);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6), 0 0 15px rgba(0, 204, 255, 0.2);
+        z-index: 1030;
+        border-bottom: 1px solid rgba(0, 204, 255, 0.3);
+        transition: all 0.3s ease;
       }
-    }
-    
-    @media (max-width: 768px) {
+      
+      .custom-navbar:hover {
+        background-color: rgba(0, 5, 16, 0.95);
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 204, 255, 0.25);
+      }
+      
+  
+      @media (max-width: 992px) {
+        .navbar-collapse {
+          position: absolute;
+          width: 100%;
+          top: 100%;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.95);
+          border-radius: 0 0 10px 10px;
+          border: 1px solid rgba(0, 204, 255, 0.3);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 204, 255, 0.2);
+          padding: 10px;
+          z-index: 1040;
+          animation: slideDown 0.3s ease-out;
+        }
+      }
+      
+      .navbar-collapse {
+        justify-content: flex-end;
+      }
+      
+      .navbar-nav {
+        display: flex;
+        align-items: center;
+      }
+      
+      @keyframes slideDown {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      
       main {
-        padding: 1.5rem 1rem;
+        padding-top: 70px; 
+        position: relative;
+        z-index: 1020; 
+        min-height: 100vh; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .navbar-toggler {
+        border: 1px solid rgba(0, 204, 255, 0.3);
+        padding: 0.4rem;
+        transition: all 0.3s ease;
+      }
+      
+      .navbar-toggler:hover {
+        background-color: rgba(0, 204, 255, 0.1);
+        box-shadow: 0 0 8px rgba(0, 204, 255, 0.3);
+      }
+      
+      .navbar-toggler:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(0, 204, 255, 0.3);
+      }
+      
+      .navbar-toggler-icon {
+        filter: invert(1);
+      }
+      
+      .navbar-collapse .nav-link {
+        color: #00CCFF; 
+        padding: 8px 15px;
+        transition: all 0.2s ease;
+        text-align: center;
+        margin: 5px 0;
+      }
+      
+      .navbar-collapse .nav-link:hover {
+        color: #00CCFF; 
+        text-decoration: none;
+        border-bottom: 2px solid #00CCFF; 
+        text-shadow: 0 0 10px rgba(0, 204, 255, 0.5); 
+      }
+      
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 1rem;
+        min-height: calc(100vh - 56px);
       }
       
       .chatbot-container {
-        padding: 20px;
-        min-height: 500px;
+        width: 100%;
+        max-width: 900px;
+        height: auto;
+        min-height: 600px;
+        background-color: #0A1018;
+        border-radius: 12px;
+        border: 2px solid #00CCFF;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 204, 255, 0.3);
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: all 0.3s ease;
+      }
+      
+      .chatbot-header {
+        text-align: center;
+        margin-bottom: 20px;
       }
       
       .chatbot-header h1 {
-        font-size: 1.8rem;
-      }
-      
-      .preset-questions {
-        gap: 8px;
-      }
-      
-      .preset-questions button {
-        padding: 10px 15px;
-        font-size: 0.9rem;
-      }
-    }
-    
-    @media (max-width: 576px) {
-      main {
-        padding: 1rem 0.5rem;
-      }
-      
-      .chatbot-container {
-        padding: 15px;
-        min-height: 450px;
-        max-width: 95%;
-      }
-      
-      .chatbot-header h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        color: #00CCFF;
+        margin-bottom: 10px;
+        text-shadow: 0 0 15px rgba(0, 204, 255, 0.5);
       }
       
       .chatbot-header p {
-        font-size: 0.9rem;
-      }
-      
-      .preset-questions {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 8px;
+        font-size: 1.1rem;
+        color: #E0E6F0;
         margin-bottom: 15px;
       }
       
+      .preset-questions {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 25px;
+      }
+      
       .preset-questions button {
-        width: 100%;
-        padding: 10px;
+        padding: 12px 18px;
+        border: 1px solid #00CCFF; /* Vibrant Cyan Blue */
+        background: rgba(0, 204, 255, 0.15);
+        color: #E0E6F0;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        font-weight: 500;
+      }
+      
+      .preset-questions button:hover {
+        background-color: rgba(0, 204, 255, 0.25);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 204, 255, 0.2);
+      }
+      
+      .chat-messages {
+        flex-grow: 1;
+        overflow-y: auto;
+        border: 1px solid #1A2030;
+        border-radius: 8px;
+        padding: 15px;
+        margin-bottom: 15px;
+        background-color: #000510;
+        display: flex;
+        flex-direction: column;
+        max-height: 400px;
+        scrollbar-width: thin;
+        scrollbar-color: #00CCFF #0A1018;
+      }
+      
+      .chat-messages::-webkit-scrollbar {
+        width: 6px;
+      }
+      
+      .chat-messages::-webkit-scrollbar-track {
+        background: #0A1018;
+        border-radius: 3px;
+      }
+      
+      .chat-messages::-webkit-scrollbar-thumb {
+        background-color: #00CCFF;
+        border-radius: 3px;
       }
       
       .message {
-        max-width: 90%;
-        padding: 10px;
+        margin-bottom: 15px;
+        padding: 12px 15px;
+        border-radius: 8px;
+        max-width: 80%;
+        word-wrap: break-word;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 0.3s ease;
       }
       
-      .input-area input {
-        padding: 10px;
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
       }
       
-      .input-area button {
-        padding: 8px 12px;
+      .message.user {
+        background-color: #101520;
+        align-self: flex-end;
+        text-align: right;
+        color: #E0E6F0;
+        border-bottom-right-radius: 2px;
+        margin-left: auto;
+        border-right: 2px solid #0099CC;
       }
-    }
-  </style>
+      
+      .message.bot {
+        background-color: rgba(0, 204, 255, 0.15);
+        align-self: flex-start;
+        text-align: left;
+        color: #E0E6F0;
+        border-bottom-left-radius: 2px;
+        border-left: 3px solid #00CCFF;
+        margin-right: auto;
+      }
+      
+      @media (max-width: 992px) {
+        .chatbot-container {
+          max-width: 90%;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        main {
+          padding: 1.5rem 1rem;
+        }
+        
+        .chatbot-container {
+          padding: 20px;
+          min-height: 500px;
+        }
+        
+        .chatbot-header h1 {
+          font-size: 1.8rem;
+        }
+        
+        .preset-questions {
+          gap: 8px;
+        }
+        
+        .preset-questions button {
+          padding: 10px 15px;
+          font-size: 0.9rem;
+        }
+      }
+      
+      @media (max-width: 576px) {
+        main {
+          padding: 1rem 0.5rem;
+          padding-top: 80px;
+          min-height: 100vh;
+        }
+        
+        .chatbot-container {
+          padding: 15px;
+          min-height: 80vh;
+          max-width: 100%;
+          margin: 0;
+        }
+        
+        .chatbot-header {
+          margin-bottom: 10px;
+        }
+        
+        .chatbot-header h1 {
+          font-size: 1.5rem;
+        }
+        
+        .chatbot-header p {
+          font-size: 0.9rem;
+          margin-bottom: 10px;
+        }
+        
+        .preset-questions {
+          flex-direction: column;
+          align-items: stretch;
+          gap: 8px;
+          margin-bottom: 10px;
+        }
+        
+        .preset-questions button {
+          width: 100%;
+          padding: 10px;
+        }
+        
+        .chat-messages {
+          max-height: 55vh;
+          padding: 12px;
+          font-size: 1.05rem;
+          margin-bottom: 0;
+        }
+        
+        .message {
+          max-width: 95%;
+          padding: 12px;
+          margin-bottom: 10px;
+          line-height: 1.4;
+        }
+      }
+    </style>
 
-  <nav class="navbar navbar-expand-lg custom-navbar">
+  <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/index.html" data-key="brand">RP</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="index.html">RP</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+              aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link" href="index.html" data-key="close">Close</a>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" data-key="close">Close</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -289,49 +349,6 @@
         <button data-key="androidButton">Android Development</button>
       </div>
       <div class="chat-messages"></div>
-      <div class="input-area">
-        <input data-key="search-bar" type="text" placeholder="Or type here..." />
-        <button><i class="bi bi-send"></i></button>
-      </div>
-    </div>
-  </main>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="knowledge.js"></script>
-  <script src="language_switching.js"></script>
-</body>
-</html>
-
-  <div class="page-overlay"></div>
-  <nav class="navbar navbar-expand-lg custom-navbar">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/index.html" data-key="brand">RP</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link" href="index.html" data-key="close">Close</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <main>
-    <div class="chatbot-container">
-      <div class="chatbot-header">
-        <h1 data-key="title">What would you like to know about me?</h1>
-        <p data-key="subtitle">Click in one of the categories bellow</p>
-      </div>
-      <div class="preset-questions">
-        <button data-key="frontendButton">Frontend Technologies</button>
-        <button data-key="backendButton">Backend Technologies</button>
-        <button data-key="toolsButton">Tools</button>
-        <button data-key="androidButton">Android Development</button>
-      </div>
-      <div class="chat-messages"></div>
-      <div class="input-area">
-        <input data-key="search-bar" type="text" placeholder="Or type here..." />
-        <button><i class="bi bi-send"></i></button>
-      </div>
     </div>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
