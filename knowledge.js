@@ -46,11 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const questionKey = question.toLowerCase();
         const currentLanguage = getCurrentLanguage();
 
-        const answer =
-          answers[currentLanguage][questionKey] ||
-          (currentLanguage === "pt"
-            ? "Desculpa, não entendi. Eu só consigo responder base as categorias em cima"
-            : "Sorry, I didn't understand. I just can answer based in the categories above");
+        const answer = answers[currentLanguage][questionKey];
         
         loadingMessage.innerHTML = answer;
       }, 1000);
