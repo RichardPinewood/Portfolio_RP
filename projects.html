@@ -40,19 +40,28 @@
             border-radius: 10px;
             box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 204, 255, 0.2);
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            min-width: 300px;
+            max-width: 500px;
+            margin: 0 auto;
         }
 
         .card-title {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             color: #00CCFF;
             text-shadow: 0 0 10px rgba(0, 204, 255, 0.4);
+            text-align: left;
+        }
+
+        .card-body {
+            padding: 1.8rem;
         }
 
         .card-text {
-            font-size: 1rem;
-            margin-bottom: 15px;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            line-height: 1.5;
         }
 
         .tech-tags {
@@ -85,6 +94,27 @@
             transform: translateY(-2px);
             box-shadow: 0 5px 20px rgba(0, 204, 255, 0.6);
         }
+        
+        .projects-title {
+            font-size: 2.5rem;
+            background: linear-gradient(45deg, #8A2BE2 10%, #C77DFF 30%, #E0AAFF 50%, #C77DFF 70%, #8A2BE2 90%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 15px rgba(201, 125, 255, 0.6);
+            margin-bottom: 1rem;
+            font-weight: bold;
+            padding-left: 0.5rem;
+            animation: shimmer 3s infinite;
+            letter-spacing: 1px;
+        }
+        
+        @keyframes shimmer {
+            0% { background-position: 0% center; }
+            50% { background-position: 100% center; }
+            100% { background-position: 0% center; }
+        }
     </style>
 
     <!-- Navigation -->
@@ -102,17 +132,21 @@
         </div>
     </nav>
 
-    <div class="text-center my-4">
-        <p class="h2" data-key="facts">Projects</p>
+    <div class="container">
+        <div class="row mt-5 mb-4">
+            <div class="col-12">
+                <h2 class="projects-title" data-key="facts">My Work</h2>
+            </div>
+        </div>
     </div>
 
     <div class="container my-5">
         <div class="row justify-content-start"> 
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <div class="card card-custom">
                     <div class="card-body">
                         <h4 class="card-title" data-key="projectTitle">Project 01</h4>
-                        <p class="card-text" data-key="projectDescription">The best place to discover classic movies & Tv Shows
+                        <p class="card-text" data-key="projectDescription">The best place to discover classic movies & TV shows
                         <div class="tech-tags">
                             <span class="badge bg-secondary">#html</span>
                             <span class="badge bg-secondary">#css</span>
