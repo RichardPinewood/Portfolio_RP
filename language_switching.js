@@ -4,17 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentLang = localStorage.getItem('language') || 'en';
     loadLanguage(currentLang);
     
-    const style = document.createElement('style');
-    style.textContent = `
-        .dropdown-toggle[aria-expanded="true"] {
-            color: transparent !important;
-        }
-        .dropdown-toggle[aria-expanded="true"]:after {
-            color: #00CCFF !important;
-        }
-    `;
-    document.head.appendChild(style);
-
     languageDropdownItems.forEach(item => {
         item.addEventListener('click', (e) => {
             e.preventDefault();  

@@ -61,6 +61,41 @@
       margin-top: 0.5rem;
       margin-bottom: 2rem;
       color: #E0E6F0;
+      text-align: center;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .no-break {
+      white-space: nowrap;
+    }
+    
+    .intro-card {
+      background-color: rgba(0, 5, 20, 0.7);
+      border-radius: 15px;
+      padding: 30px;
+      margin-top: 20px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    }
+    
+    .intro-content {
+      text-align: center;
+    }
+    
+    .greeting-text {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      color: #00CCFF;
+      text-shadow: 0 0 20px rgba(0, 204, 255, 0.6);
+    }
+    
+    .intro-text {
+      font-size: 1.4rem;
+      line-height: 1.7;
+      color: #E0E6F0;
+      margin-bottom: 25px;
     }
 
     .btn-light {
@@ -78,6 +113,13 @@
       background-color: #00A3CC;
       transform: translateY(-2px);
       box-shadow: 0 5px 20px rgba(0, 204, 255, 0.6);
+    }
+
+    .dropdown-toggle[aria-expanded="true"] {
+        color: transparent !important;
+    }
+    .dropdown-toggle[aria-expanded="true"]:after {
+        color: #00CCFF !important;
     }
   </style>
 
@@ -118,17 +160,21 @@
 
   <!-- Main Content -->
   <div class="container mt-custom">
-    <div>
-      <h3 data-key="greeting">Hello,</h3>
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-md-8">
+        <div class="intro-card">
+          <div class="intro-content">
+            <h2 class="greeting-text" data-key="greeting">Hello,</h2>
+            <p class="intro-text" data-key="intro">
+              My name is Richard Pinewood. I am a junior web developer</br>who enjoys using creativity to develop innovative solutions</br>for <span class="no-break">full stack</span> applications.
+            </p>
+            <div class="mt-4">
+              <a href="images/CurriculumVitae.png" download="CurriculumVitae" class="btn btn-light" data-key="downloadCV">Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <p class="h4" data-key="intro">
-      My name is Richard Pinewood. I am a junior web devoloper<br>
-      who enjoys using creativity to develop innovative solutions
-      for <br> 
-      full stack applications.<br>
-    </p>
-
-    <a href="images/CurriculumVitae.png" download="CurriculumVitae" class="btn btn-light" data-key="downloadCV">Download CV</a>
   </div>
 
   <!-- Footer -->
