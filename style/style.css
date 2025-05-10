@@ -1,44 +1,44 @@
 body {
-    background-color: #000510; /* Deep Black with hint of blue */
+    background-color: #000510;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    color: #E0E6F0; /* Brighter text for better contrast */
+    color: #E0E6F0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 .navbar-brand {
-    color: #00CCFF; /* Vibrant Cyan Blue for brand */
+    color: #00CCFF;
     text-decoration: none;
     font-size: 45px;
     display: flex;
     justify-content: center;
-    text-shadow: 0 0 15px rgba(0, 204, 255, 0.5); /* Enhanced glow effect */
+    text-shadow: 0 0 15px rgba(0, 204, 255, 0.5);
 }
 
 .navbar-brand:active {
-    color: #00CCFF; /* Vibrant Cyan Blue */
+    color: #00CCFF;
 }
 
 .navbar-brand:hover {
-    color: #00CCFF !important; /* Vibrant Cyan Blue */
-    text-shadow: 0 0 20px rgba(0, 204, 255, 0.7); /* Enhanced vibrant glow on hover */
+    color: #00CCFF !important;
+    text-shadow: 0 0 20px rgba(0, 204, 255, 0.7);
 }
 
 .nav-link {
-    color: #E0E6F0; /* Brighter text */
+    color: #E0E6F0;
     text-decoration: none;
     font-size: 1.2rem;
 }
 
 .nav-link:hover,
 .nav-link:active {
-    color: #00CCFF; /* Vibrant Cyan Blue */
+    color: #00CCFF;
     text-decoration: none;
-    border-bottom: 2px solid #00CCFF; /* Vibrant Cyan Blue */
-    text-shadow: 0 0 10px rgba(0, 204, 255, 0.5); /* Light glow effect */
+    border-bottom: 2px solid #00CCFF;
+    text-shadow: 0 0 10px rgba(0, 204, 255, 0.5);
 }
 
 .navbar-collapse {
@@ -59,25 +59,25 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.85); /* Pure black with transparency */
+    background-color: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6), 0 0 15px rgba(0, 204, 255, 0.2); /* Enhanced glow */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6), 0 0 15px rgba(0, 204, 255, 0.2);
     z-index: 1030;
     transition: all 0.3s ease;
-    border-bottom: 1px solid rgba(0, 204, 255, 0.3); /* Vibrant border */
+    border-bottom: 1px solid rgba(0, 204, 255, 0.3);
 }
 
 .custom-navbar:hover {
-    background-color: rgba(0, 5, 16, 0.95); /* Deep black-blue */
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 204, 255, 0.25); /* Enhanced vibrant glow */
+    background-color: rgba(0, 5, 16, 0.95);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 204, 255, 0.25);
 }
 
 .dropdown-menu {
     min-width: 150px;
     border-radius: 8px;
-    border: 1px solid #00CCFF; /* Vibrant blue border */
-    background-color: #000A14; /* Pure rich dark */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 204, 255, 0.3); /* Enhanced vibrant glow */
+    border: 1px solid #00CCFF;
+    background-color: #000A14;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 204, 255, 0.3);
     animation: fadeIn 0.2s ease-in-out;
 }
 
@@ -88,28 +88,27 @@ body {
     padding: 10px;
     font-size: 14px;
     font-weight: 500;
-    color: #E0E6F0; /* Brighter text */
+    color: #E0E6F0;
     transition: all 0.2s ease-in-out;
 }
 
 .dropdown-item:hover {
-    background: rgba(0, 204, 255, 0.2); /* Vibrant blue background */
-    color: #00CCFF; /* Vibrant blue text */
+    background: rgba(0, 204, 255, 0.2);
+    color: #00CCFF;
 }
 
-/* Style for collapsed navbar on mobile */
 @media (max-width: 992px) {
     .navbar-collapse {
         position: absolute;
         width: 100%;
-        top: 100%; /* Position it just below the navbar */
+        top: 100%;
         left: 0;
-        background-color: rgba(0, 0, 0, 0.95); /* Pure black background */
+        background-color: rgba(0, 0, 0, 0.95);
         border-radius: 0 0 10px 10px;
-        border: 1px solid rgba(0, 204, 255, 0.3); /* Vibrant blue border */
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 204, 255, 0.2); /* Enhanced glow */
+        border: 1px solid rgba(0, 204, 255, 0.3);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 204, 255, 0.2);
         padding: 10px;
-        z-index: 1040; /* Even higher z-index */
+        z-index: 1040;
         animation: fadeDown 0.3s ease-out;
     }
     
@@ -143,9 +142,9 @@ body {
     padding: 2rem 1rem; 
     margin-top: auto;
     font-size: 1.1rem;
-    background-color: #000000; /* Pure black footer */
-    border-top: 1px solid rgba(0, 204, 255, 0.3); /* Vibrant blue border */
-    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 204, 255, 0.1); /* Subtle glow from top */
+    background-color: #000000;
+    border-top: 1px solid rgba(0, 204, 255, 0.3);
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 204, 255, 0.1);
 }
 
 .footer .social-links a {
@@ -164,7 +163,6 @@ body {
     font-size: 1.1rem;
 }
 
-/* Add animation keyframes */
 @keyframes fadeDown {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
@@ -181,7 +179,6 @@ body {
     }
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
     .navbar-brand {
         font-size: 34px;
